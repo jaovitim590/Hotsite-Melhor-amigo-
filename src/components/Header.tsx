@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <div className="bg-gradient-to-r from-green-500 to-green-400 w-full shadow-lg">
+    <div className="bg-linear-to-r from-green-500 to-green-400 w-full shadow-lg">
       <div className="max-w-full mx-auto flex justify-between items-center px-8 py-4">
         
         {/* Logo e Nome */}
@@ -20,8 +20,8 @@ export const Header = () => {
 
         <div className="flex gap-3 justify-end">
           <Link to={"/produtos"}>{botao("Produtos")}</Link>
-          {botao("Galeria")}
-          {botao("Contato")}
+          <Link to={"/galeria"}>{botao("Galeria")}</Link>
+          <Link to={"/contato"}>{botao("Contato")}</Link>
         </div>
         
       </div>

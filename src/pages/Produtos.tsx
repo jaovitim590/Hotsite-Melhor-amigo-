@@ -16,7 +16,7 @@ export const Produtos = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       <Header />
       
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col justify-self-center items-center">
@@ -54,7 +54,7 @@ export const Produtos = () => {
   )
 }
 
-const Produto = ({ id, name, category, description, price, image, featured }: Product) => {
+const Produto = ({name, category, description, price, image, featured }: Product) => {
   const categoryColors = {
     alimento: "bg-green-100 text-green-700",
     servico: "bg-blue-100 text-blue-700",
@@ -72,11 +72,11 @@ const Produto = ({ id, name, category, description, price, image, featured }: Pr
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-green-100 w-full max-w-sm flex flex-col">
 
-      <div className={`text-sm font-bold py-2 px-4 text-center ${featured ? 'bg-gradient-to-r from-green-500 to-green-400 text-white' : 'bg-transparent h-10'}`}>
+      <div className={`text-sm font-bold py-2 px-4 text-center ${featured ? 'bg-linear-to-r from-green-500 to-green-400 text-white' : 'bg-transparent h-10'}`}>
         {featured && '⭐ Destaque'}
       </div>
 
-      <div className="relative h-48 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
+      <div className="relative h-48 bg-linear-to-br from-green-50 to-green-100 flex items-center justify-center">
         <img
           className="max-h-40 w-auto object-contain rounded-lg"
           src={image}
