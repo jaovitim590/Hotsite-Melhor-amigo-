@@ -9,7 +9,7 @@ export interface Product {
   featured: boolean;
 }
 
-// Seed de produtos do Petshop "Melhor Amigo"
+
 export const productsData: Product[] = [
   {
     id: 1,
@@ -53,14 +53,13 @@ export const productsData: Product[] = [
     category: "higiene",
     description: "Na nossa seleção de produtos, você encontrará uma gama de itens de higiene e cuidados para o seu pet. Isso inclui shampoos e condicionadores específicos para diferentes tipos de pelagem, escovas e pentes para manter os pelos desembaraçados e saudáveis, produtos de limpeza auricular e ocular, além de acessórios essenciais como coleiras, guias e comedouros. Tudo o que você precisa para manter seu animalzinho limpo, confortável e bem cuidado.",
     price: 45.90,
-    image: "/produtos/higiene.jpg",
+    image: "../produtos/higiene.jpg",
     featured: false
   }
 ];
 
-// Simulação de API
 export const fetchProducts = async (): Promise<Product[]> => {
-  // Simula delay de rede
+
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(productsData);
@@ -68,29 +67,3 @@ export const fetchProducts = async (): Promise<Product[]> => {
   });
 };
 
-export const fetchProductById = async (id: number): Promise<Product | undefined> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const product = productsData.find(p => p.id === id);
-      resolve(product);
-    }, 500);
-  });
-};
-
-export const fetchProductsByCategory = async (category: Product['category']): Promise<Product[]> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const filtered = productsData.filter(p => p.category === category);
-      resolve(filtered);
-    }, 600);
-  });
-};
-
-export const fetchFeaturedProducts = async (): Promise<Product[]> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const featured = productsData.filter(p => p.featured);
-      resolve(featured);
-    }, 500);
-  });
-};
