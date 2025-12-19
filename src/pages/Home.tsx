@@ -11,11 +11,11 @@ export const Home = () => {
 
 const content = () => {
   return (
-    <div className="bg-gradient-to-b from-green-50 to-white min-h-screen flex justify-center">
+    <div className="bg-linear-to-b from-green-50 to-white min-h-screen flex justify-center">
       <div className="max-w-5xl mx-auto px-6 py-12">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-green-700 text-center mb-6">
-            Bem-vindo ao Petshop "Melhor Amigo"! 🐾
+            Bem-vindo ao Petshop "Melhor Amigo"!
           </h2>
           
           <div className="space-y-6 text-gray-700 leading-relaxed text-center">
@@ -59,7 +59,7 @@ const content = () => {
               seu bem-estar e felicidade.
             </p>
 
-            <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-8 rounded-xl mt-8 shadow-md">
+            <div className="bg-linear-to-r from-green-600 to-green-500 text-white p-8 rounded-xl mt-8 shadow-md">
               <p className="text-lg leading-relaxed">
                 Estamos ansiosos para conhecê-lo e ao seu melhor amigo! Visite-nos no
                 Petshop "Melhor Amigo" e descubra a diferença que fazemos na vida dos

@@ -44,7 +44,7 @@ export const Contato = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col justify-self-center">
         <div className="text-center mb-12 flex flex-col items-center">
           <h1 className="text-5xl font-bold text-green-700 mb-4">
-            Entre em Contato 💬
+            Entre em Contato
           </h1>
           <div className="w-24 h-1 bg-green-500 rounded-full"></div>
           <p className="mt-6 text-xl text-gray-600 max-w-3xl">
@@ -158,12 +158,12 @@ export const Contato = () => {
 
           <div className="space-y-6">
             <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-green-100">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Nossas Informações</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6 pb-3">Nossas Informações</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-green-100 rounded-full p-3 shrink-0">
-                    <span className="text-2xl">📍</span>
+                    <span className="text-2xl ">📍</span>
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 text-lg mb-1">Endereço</h3>
