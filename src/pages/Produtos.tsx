@@ -1,4 +1,3 @@
-import { Header } from "../components/Header"
 import { type Product, fetchProducts } from "../seeds/Produto"
 import { useState, useEffect } from "react"
 
@@ -17,8 +16,7 @@ export const Produtos = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
-      <Header />
-      
+
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col justify-self-center items-center">
 
         <div className="text-center mb-12 flex flex-col items-center pb-10">

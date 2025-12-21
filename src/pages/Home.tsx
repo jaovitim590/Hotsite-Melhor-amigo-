@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Sparkles, Heart, Star, Bone } from 'lucide-react';
-import { Header } from '../components/Header';
 
 export default function Home() {
   return (
     <>
-      <Header/>
       {content()}
     </>
   );

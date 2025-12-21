@@ -23,8 +23,7 @@ export const Contato = () => {
     e.preventDefault()
     console.log("Formulário enviado:", formData)
     setSubmitted(true)
-    
-    // Reset após 3 segundos
+
     setTimeout(() => {
       setFormData({
         nome: "",
@@ -39,7 +38,6 @@ export const Contato = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col justify-self-center">
         <div className="text-center mb-12 flex flex-col items-center">
@@ -156,11 +154,11 @@ export const Contato = () => {
             )}
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-green-100">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6 pb-3">Nossas Informações</h2>
+          <div className="space-y-6 h-full bg-white rounded-2xl shadow-lg  border-2 border-green-100 flex flex-col justify-between" >
+            <div className="p-5 flex flex-col">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6 pb-3 ">Nossas Informações</h2>
               
-              <div className="space-y-6">
+              <div className="space-y-6 flex flex-col  gap-5">
                 <div className="flex items-start gap-4">
                   <div className="bg-green-100 rounded-full p-3 shrink-0">
                     <span className="text-2xl ">📍</span>
@@ -216,7 +214,7 @@ export const Contato = () => {
               </div>
             </div>
 
-            <div className="bg-linear-to-r from-green-500 to-green-400 rounded-2xl shadow-lg p-8 text-white">
+            <div className="bg-linear-to-r from-green-500 to-green-400 rounded-b-2xl shadow-lg p-8 text-white ">
               <h2 className="text-3xl font-bold mb-6">Siga-nos nas Redes Sociais! 🐾</h2>
               <div className="flex gap-4">
                 <button className="bg-white text-green-600 hover:bg-green-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-110 shadow-md">

@@ -1,4 +1,3 @@
-import { Header } from "../components/Header"
 import { type GalleryPhoto, fetchGalleryPhotos } from "../seeds/Galery"
 import { useState, useEffect } from "react"
 
@@ -23,7 +22,6 @@ export const Galeria = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
-      <Header />
       
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col justify-self-center ">
         <div className="text-center mb-12 flex flex-col items-center">
@@ -117,7 +115,6 @@ const PhotoCard = ({ photo, onClick }: { photo: GalleryPhoto; onClick: () => voi
         </div>
       </div>
 
-      {/* Informações */}
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-800 mb-1">{photo.petName}</h3>
         <p className="text-sm text-green-600 font-semibold mb-2">{photo.service}</p>
@@ -127,7 +124,6 @@ const PhotoCard = ({ photo, onClick }: { photo: GalleryPhoto; onClick: () => voi
   )
 }
 
-// Modal de Foto Ampliada
 const PhotoModal = ({ photo, onClose }: { photo: GalleryPhoto; onClose: () => void }) => {
   return (
     <div
@@ -149,7 +145,6 @@ const PhotoModal = ({ photo, onClose }: { photo: GalleryPhoto; onClose: () => vo
           </button>
         </div>
 
-        {/* Imagem Grande */}
         <div className="relative bg-linear-to-br from-green-50 to-green-100">
           <img
             src={photo.image}
@@ -161,7 +156,6 @@ const PhotoModal = ({ photo, onClose }: { photo: GalleryPhoto; onClose: () => vo
           />
         </div>
 
-        {/* Informações Detalhadas */}
         <div className="p-8">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-3xl">{photo.petType === 'cachorro' ? '🐕' : '🐱'}</span>
