@@ -134,7 +134,6 @@ const PhotoModal = ({ photo, onClose }: { photo: GalleryPhoto; onClose: () => vo
         className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-scaleIn"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Botão Fechar */}
         <div className="sticky top-0 bg-white p-4 flex justify-between items-center border-b border-gray-200 z-10">
           <h2 className="text-2xl font-bold text-gray-800">{photo.title}</h2>
           <button

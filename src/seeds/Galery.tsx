@@ -1,4 +1,3 @@
-// Tipos
 export interface GalleryPhoto {
   id: number;
   title: string;
@@ -10,7 +9,6 @@ export interface GalleryPhoto {
   date: string;
 }
 
-// Seed de fotos da galeria
 export const galleryData: GalleryPhoto[] = [
   {
     id: 1,

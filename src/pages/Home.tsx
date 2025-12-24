@@ -98,10 +98,6 @@ const content = () => {
             <div className="relative ">
               <div className="absolute inset-0 bg-linear-to-r from-green-400 via-emerald-400 to-green-400 opacity-10 animate-gradient" />
               <h2 className="relative text-4xl md:text-6xl font-bold text-center mb-6 animate-fade-in">
-                <span className="bg-linear-to-r from-green-600 via-emerald-600 to-green-600 bg-clip-text text-transparent animate-gradient">
-                  Bem-vindo ao Petshop
-                </span>
-                <br />
                 <span className="text-green-700 inline-flex items-center gap-3">
                   "Melhor Amigo"
                   <Heart className="inline w-10 h-10 text-red-500 animate-pulse" />
@@ -196,8 +192,6 @@ const content = () => {
                   </p>
                 </div>
               </div>
-
-              {/* Seção 5 */}
               <div 
                 className="animate-section"
                 data-index="4"
