@@ -10,17 +10,8 @@ export default function Home() {
 }
 
 const content = () => {
-  const [scrollY, setScrollY] = useState(0);
+
   const [visibleSections, setVisibleSections] = useState<Set<number>>(new Set());
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
