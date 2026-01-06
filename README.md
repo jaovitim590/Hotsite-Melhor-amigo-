@@ -24,15 +24,10 @@ cd petshop-melhor-amigo
 # Instale as dependências
 npm install
 
-# Execute o servidor de desenvolvimento
-npm start
-```
-
-O frontend estará rodando em `http://localhost:3000`
 
 ## 📁 Estrutura do Projeto
 
-```
+
 petshop-melhor-amigo/
 ├── frontend/
    ├── public/
